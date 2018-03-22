@@ -223,7 +223,8 @@ function Save-Paste {
     throw 'url not implemented yet'
   }
   
-  $FileExt = switch($Format.ToLower(){
+  $FileExt = switch($Format.ToLower()) #missing ) 3/22/18
+  {
     #TODO: Add fileformats
     'none' {'.txt'}
     'json' {'.json'}
